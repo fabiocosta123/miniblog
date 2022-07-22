@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fabiocosta123.github.io/miniblog/static/css/main.960102ad.css",
-    "main.js": "/fabiocosta123.github.io/miniblog/static/js/main.db0aec33.js",
-    "static/js/787.95489147.chunk.js": "/fabiocosta123.github.io/miniblog/static/js/787.95489147.chunk.js",
-    "index.html": "/fabiocosta123.github.io/miniblog/index.html",
-    "main.960102ad.css.map": "/fabiocosta123.github.io/miniblog/static/css/main.960102ad.css.map",
-    "main.db0aec33.js.map": "/fabiocosta123.github.io/miniblog/static/js/main.db0aec33.js.map",
-    "787.95489147.chunk.js.map": "/fabiocosta123.github.io/miniblog/static/js/787.95489147.chunk.js.map"
+    "main.css": "/miniblog/static/css/main.960102ad.css",
+    "main.js": "/miniblog/static/js/main.7e1cdbd9.js",
+    "static/js/787.95489147.chunk.js": "/miniblog/static/js/787.95489147.chunk.js",
+    "index.html": "/miniblog/index.html",
+    "main.960102ad.css.map": "/miniblog/static/css/main.960102ad.css.map",
+    "main.7e1cdbd9.js.map": "/miniblog/static/js/main.7e1cdbd9.js.map",
+    "787.95489147.chunk.js.map": "/miniblog/static/js/787.95489147.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.960102ad.css",
-    "static/js/main.db0aec33.js"
+    "static/js/main.7e1cdbd9.js"
   ]
 }

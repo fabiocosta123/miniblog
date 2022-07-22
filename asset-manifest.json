@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.960102ad.css",
-    "main.js": "/static/js/main.09acfe89.js",
-    "static/js/787.95489147.chunk.js": "/static/js/787.95489147.chunk.js",
-    "index.html": "/index.html",
-    "main.960102ad.css.map": "/static/css/main.960102ad.css.map",
-    "main.09acfe89.js.map": "/static/js/main.09acfe89.js.map",
-    "787.95489147.chunk.js.map": "/static/js/787.95489147.chunk.js.map"
+    "main.css": "/fabiocosta123.github.io/miniblog/static/css/main.960102ad.css",
+    "main.js": "/fabiocosta123.github.io/miniblog/static/js/main.db0aec33.js",
+    "static/js/787.95489147.chunk.js": "/fabiocosta123.github.io/miniblog/static/js/787.95489147.chunk.js",
+    "index.html": "/fabiocosta123.github.io/miniblog/index.html",
+    "main.960102ad.css.map": "/fabiocosta123.github.io/miniblog/static/css/main.960102ad.css.map",
+    "main.db0aec33.js.map": "/fabiocosta123.github.io/miniblog/static/js/main.db0aec33.js.map",
+    "787.95489147.chunk.js.map": "/fabiocosta123.github.io/miniblog/static/js/787.95489147.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.960102ad.css",
-    "static/js/main.09acfe89.js"
+    "static/js/main.db0aec33.js"
   ]
 }

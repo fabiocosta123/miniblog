@@ -4,7 +4,7 @@ import styles from "./About.modules.css";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className="about">
       <h2>
         Sobre o mini <span>blog</span>
       </h2>

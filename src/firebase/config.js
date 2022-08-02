@@ -1,7 +1,5 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-
 const firebaseConfig = {
   apiKey: "AIzaSyC2haiwPJ_88yIf0mAqL2xTRFfxWCu3h5k",
   authDomain: "miniblog-df094.firebaseapp.com",

@@ -11,8 +11,9 @@ const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [body, setBody] = useState("");
-  const [tag, setTag] = useState([]);
+  const [tags, setTags] = useState([]);
   const [formError, setFormError] = useState("");
+
   const { user } = useAuthValue();
 
   const { insertDocument, response } = useInsertDocument("posts");
@@ -31,7 +32,7 @@ const CreatePost = () => {
       title,
       image,
       body,
-      tag,
+      tags,
       uid: user.uid,
       createdBy: user.displayName,
     });
@@ -45,7 +46,7 @@ const CreatePost = () => {
       <p>Escreva sobre o que deseja compartilhar</p>
       <form onSubmit={handleSubmit}>
         <label>
-          <span>Título</span>
+          <span>Título:</span>
           <input
             type="text"
             required
@@ -56,7 +57,7 @@ const CreatePost = () => {
           />
         </label>
         <label>
-          <span>URL da imagem</span>
+          <span>URL da imagem:</span>
           <input
             type="text"
             required
@@ -67,26 +68,26 @@ const CreatePost = () => {
           />
         </label>
         <label>
-          <span>Conteúdo</span>
+          <span>Conteúdo:</span>
           <textarea
             name="body"
+            required
             placeholder="Digite o conteúdo do seu post"
             onChange={(e) => setBody(e.target.value)}
             value={body}
           ></textarea>
         </label>
         <label>
-          <span>Tags</span>
+          <span>Tags:</span>
           <input
             type="text"
             required
             placeholder="Insira as tags separadas por vírgulas"
             name="tags"
-            onChange={(e) => setTag(e.target.value)}
+            onChange={(e) => setTags(e.target.value)}
             value={image}
           />
         </label>
-
         {!response.loading && <button className="btn">Cadastrar</button>}
         {response.loading && (
           <button className="btn" disabled>

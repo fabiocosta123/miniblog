@@ -30,7 +30,6 @@ export const useAuthentication = () => {
     checkIfIsCancelled();
 
     setLoading(true);
-    setError(null);
 
     try {
       const { user } = await createUserWithEmailAndPassword(
@@ -40,7 +39,6 @@ export const useAuthentication = () => {
       );
 
       await updateProfile(user, { displayName: data.displayName });
-      setLoading(false);
 
       return user;
     } catch (error) {
@@ -56,9 +54,10 @@ export const useAuthentication = () => {
       } else {
         systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde";
       }
-      setLoading(false);
+
       setError(systemErrorMessage);
     }
+    setLoading(false);
   };
 
   // logout - sign out
@@ -78,8 +77,11 @@ export const useAuthentication = () => {
 
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      setLoading(false);
     } catch (error) {
+      console.log(error.message);
+      console.log(typeof error.message);
+      console.log(error.message.includes("user-not"));
+
       let systemErrorMessage;
 
       if (error.message.includes("user-not-found")) {
@@ -89,10 +91,11 @@ export const useAuthentication = () => {
       } else {
         systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde";
       }
-
+      console.log(systemErrorMessage);
       setError(systemErrorMessage);
-      setLoading(false);
     }
+    console.log(error);
+    setLoading(false);
   };
 
   useEffect(() => {

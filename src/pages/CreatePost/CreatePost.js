@@ -20,7 +20,7 @@ const CreatePost = () => {
   const { insertDocument, response } = useInsertDocument("posts");
 
   const handleSubmit = (e) => {
-    e.PreventDefault();
+    e.preventDefault();
     setFormError("");
 
     //validate the url image
@@ -103,7 +103,7 @@ const CreatePost = () => {
             placeholder="Insira as tags separadas por vírgulas"
             name="tags"
             onChange={(e) => setTags(e.target.value)}
-            value={image}
+            value={tags}
           />
         </label>
         {!response.loading && <button className="btn">Cadastrar</button>}

@@ -24,10 +24,16 @@ const CreatePost = () => {
     setFormError("");
 
     //validate the url image
-
+    try {
+      new URL(image);
+    } catch (error) {
+      setFormError("A imagem precisa ser uma URL");
+    }
     // criar array de tags
 
     // checar todos os valores
+
+    if (formError) return;
     // create tags array
     const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());
 
@@ -113,6 +119,7 @@ const CreatePost = () => {
           </button>
         )}
         {response.error && <p className="error">{response.error}</p>}
+        {formError && <p className="error">{formError}</p>}
       </form>
     </div>
   );

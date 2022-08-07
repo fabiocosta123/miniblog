@@ -1,5 +1,5 @@
-import { querySnapshot } from "firebase/firestore";
 import { useState, useEffect } from "react";
+
 import { db } from "../firebase/config";
 import {
   collection,
@@ -35,7 +35,7 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
 
         q = await query(collectionRef, orderBy("createdAt", "desc"));
 
-        await onSnapshot(q, (QuerySnapshot) => {
+        await onSnapshot(q, (querySnapshot) => {
           setDocuments(
             querySnapshot.docs.map((doc) => ({
               id: doc.id,

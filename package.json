@@ -1,6 +1,5 @@
 {
   "name": "miniblog",
-  "homepage": "https:/fabiocosta123.github.io/miniblog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
